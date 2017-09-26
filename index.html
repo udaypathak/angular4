@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myapp" lang="en">
+  <head>
+
+    <title>AngularJS Routing example</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+		body {
+		  padding-top: 10px;
+		  background-color: #F5F5F5;
+		}
+    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+		<div class="row">
+            <div class="col-md-9">
+                <!--<div class="nameData" >
+                    <p>Type a letter in the input field:</p>
+                    <p><input type="text" ng-model="name"></p>
+                    <ul>
+                      <li ng-repeat="x in customerData | filter:name">
+                        {{ x.name }}
+                      </li>
+                    </ul>
+
+                </div>-->
+  	   
+            </div>
+            <div class="row">
+            <div class="col-xs-12">
+            <p><a href="#/">Main</a></p>
+
+            <a href="#/view1">view 1</a>
+            <a href="#/view2">view 2</a>
+            <a href="#/red">View 3</a>
+
+
+            </div>
+            </div>
+              <div ng-view></div>
+
+		</div>
+    </div><!-- /.container -->
+	<script src="js/angular.min.js"></script>
+      <!--	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
+	<script src="js/script.js"></script>
+
+  </body>
+</html>
+
+
